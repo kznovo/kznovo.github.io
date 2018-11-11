@@ -1,3 +1,9 @@
+<header>
+HTMLサーバー比較
+============
+</header>
+
+<main>
 ## はじめに
 HTTPサーバーを作るPythonの[responder](http://python-responder.org/en/latest/)というパッケージが新しくKenneth Reitzさんによって作られたということを[Hacker News](https://news.ycombinator.com/item?id=18234192)で読んだので、使ってみようかと思い、ついでに他のサーバーパッケージも入れたすごく簡単な動作比較をします。
 
@@ -298,3 +304,4 @@ responderとexpressは両方エンドポイントで用いる関数にrequest, r
 あとrequestsとexpressではasync/awaitがサポートされているけど、flaskには無い。でもサーバー側で非同期処理ってどのくらいメリットがあるのか自分は知らない。  
 pythonのパッケージはログとかテンプレートエンジンとか諸々最初からサポートされているけど、expressは全部自分で入れていかないといけない。Unix的にはexpressの方が良いパッケージなんだろうが、ちょっとめんどくさい。今回までのセットアップでも若干pythonパッケージの方が便利だった。  
 その代わりパフォーマンスは、間違いなくexpressの方が良いはず。
+</main>
