@@ -27,7 +27,7 @@ pythonとnodejsの環境構築です。
 >><details><summary>TypeError: 'module' object is not callable　エラーが出るとき</summary>Pipenvのバグで、pip18.1を使っているとエラーがでます。(10/17/2018現在)
 >>pip18.0にダウングレードすると直ります。  
 >>
->>`$ pipenv run pip install pip==18.0`
+>>`$ pipenv run pip install pip==18.0`</details>
 
 >**node.js** (v11.0.0)
 >```bash
