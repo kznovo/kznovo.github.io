@@ -1,6 +1,7 @@
 body {
   font-family: 'Merriweather', sans-serif;
   margin: auto;
+  padding: 2%;
   max-width: 45rem;
 }
 
@@ -12,6 +13,11 @@ a {
 a:hover {
   animation: zomg 2s infinite;
   cursor: pointer;
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 
 @keyframes zomg {
