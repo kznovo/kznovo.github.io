@@ -15,7 +15,7 @@ a:hover {
   cursor: pointer;
 }
 
-img {
+.logo-img {
   display: block;
   margin: auto;
 }
