@@ -5,12 +5,12 @@ body {
   max-width: 45rem;
 }
 
-a {
+a.text {
   text-decoration: none;
   color: #337a61;
 }
 
-a:hover {
+a.text:hover {
   animation: zomg 2s infinite;
   cursor: pointer;
 }
