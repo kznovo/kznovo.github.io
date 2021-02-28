@@ -6,10 +6,56 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="theme-color" content="#337a61" />
-  <meta name="Description" content="Kazuya Hatta's personal website about python, javascript and music." />
+  <meta name="Description" content="Kazuya Hatta's personal website about python, rust, data engineering, and music." />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather" />
-  <link rel="stylesheet" href="index.css" />
+  <style>
+    body {
+      font-family: 'Merriweather';
+      margin: auto;
+      padding: 2%;
+      max-width: 45rem;
+    }
+
+    ul {
+      list-style: circle outside none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #337a61;
+    }
+
+    a.text:hover {
+      animation: zomg 2s infinite;
+      cursor: pointer;
+    }
+
+    .logo-img {
+      display: block;
+      margin: auto;
+    }
+
+    @keyframes zomg {
+
+      0%,
+      100% {
+        filter: invert(0) saturate(100%) hue-rotate(0deg);
+      }
+
+      25% {
+        filter: invert(10%) saturate(500%) hue-rotate(180deg);
+      }
+
+      50% {
+        filter: invert(10%) saturate(300%) hue-rotate(300deg);
+      }
+
+      75% {
+        filter: invert(10%) saturate(500%) hue-rotate(90deg);
+      }
+    }
+  </style>
   <title>Kznovo</title>
 </head>
 
@@ -20,29 +66,31 @@
   <p>
     Web & machine learning engineer. I love Python, JavaScript, and music. Currently learning rust.
   </p>
-  <li><a href="/CV_Kazuya_Hatta.pdf">CV</a></li>
-  <li><a href="//github.com/kznovo" class="text">GitHub</a></li>
-  <li><a href="//twitter.com/KazuyaHatta" class="text">Twitter</a></li>
-  <li><a href="//open.spotify.com/user/kazuya.hatta" class="text">Spotify</a></li>
-  <br /><br /><br />
-  <h2>Projects</h2>
-  <ul <li>
-    <h3>Rannotation (2018)</h3>
-    <a href="//github.com/kznovo/rectangle-annotation" class="text">GitHub</a>
-    <br /><br />
-    <a href="//github.com/kznovo/rectangle-annotation">
-      <video autoplay loop muted playsinline>
-        <source src="rannotation.mp4" type="video/mp4" />
-      </video>
-    </a>
-    <p>
-      Image annotation tool for object detection data preparation. Built with python and opencv.
-    </p>
-    </li>
+  <ul>
+    <li><a href="/CV_Kazuya_Hatta.pdf">CV</a></li>
+    <li><a href="//github.com/kznovo" class="text">GitHub</a></li>
+    <li><a href="//twitter.com/KazuyaHatta" class="text">Twitter</a></li>
+    <li><a href="//open.spotify.com/user/kazuya.hatta" class="text">Spotify</a></li>
   </ul>
+  <br>
+
+  <h2>Projects</h2>
+
+  <h3>Rannotation (2018)</h3>
+  <a href="//github.com/kznovo/rectangle-annotation" class="text">GitHub</a>
   <br /><br />
+  <a href="//github.com/kznovo/rectangle-annotation">
+    <video autoplay loop muted playsinline>
+      <source src="rannotation.mp4" type="video/mp4" />
+    </video>
+  </a>
+  <p>
+    Image annotation tool for object detection data preparation. Built with python and opencv.
+  </p>
+  <br>
+
   <hr />
-  <footer>&copy;Kazuya Hatta all rights reserved.</footer>
+  <footer><small>&copy;Kazuya Hatta all rights reserved.</small></footer>
 </body>
 
 </html>
