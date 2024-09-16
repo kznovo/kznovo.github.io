@@ -3,22 +3,25 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="theme-color" content="#337a61" />
-  <meta name="Description" content="Kazuya Hatta's personal website about python, rust, data engineering, and music." />
+  <meta name="description" content="Kazuya Hatta's personal website about Python, Rust, data engineering, and music." />
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather" />
+  
   <style>
     body {
-      font-family: 'Merriweather';
+      font-family: 'Merriweather', serif;
       margin: auto;
       padding: 2%;
       max-width: 45rem;
+      line-height: 1.6;
     }
 
     ul {
-      list-style: circle outside none;
+      list-style-type: circle;
+      padding-left: 1.5rem;
     }
 
     a {
@@ -34,62 +37,74 @@
     .logo-img {
       display: block;
       margin: auto;
+      width: 150px;
+      height: auto;
     }
 
     @keyframes zomg {
-
-      0%,
-      100% {
+      0%, 100% {
         filter: invert(0) saturate(100%) hue-rotate(0deg);
       }
-
       25% {
         filter: invert(10%) saturate(500%) hue-rotate(180deg);
       }
-
       50% {
         filter: invert(10%) saturate(300%) hue-rotate(300deg);
       }
-
       75% {
         filter: invert(10%) saturate(500%) hue-rotate(90deg);
       }
     }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+    }
   </style>
+
   <title>Kznovo</title>
 </head>
 
 <body>
-  <h1><a href="//kznovo.github.io">Kznovo</a></h1>
-  <img class="logo-img" src="logo.JPG" alt="logo" />
-  <h2>About me</h2>
-  <p>
-    Web & Data engineer. I love Python and Rust.
-  </p>
-  <ul>
-    <li><a href="/resume-hatta-2021-11.pdf">CV</a></li>
-    <li><a href="//github.com/kznovo" class="text">GitHub</a></li>
-    <li><a href="//twitter.com/KazuyaHatta" class="text">Twitter</a></li>
-    <li><a href="//open.spotify.com/user/kazuya.hatta" class="text">Spotify</a></li>
-  </ul>
-  <br>
+  <header>
+    <h1><a href="https://kznovo.github.io">Kznovo</a></h1>
+    <img class="logo-img" src="logo.JPG" alt="logo" />
+  </header>
 
-  <h2>Projects</h2>
+  <section>
+    <h2>About Me</h2>
+    <p>Web & Data engineer. I love Python and Rust.</p>
+    <ul>
+      <li><a href="/Resume Kazuya Hatta 2024.09.16.pdf">CV</a></li>
+      <li><a href="https://github.com/kznovo" class="text">GitHub</a></li>
+      <li><a href="https://x.com/KazuyaHatta" class="text">X</a></li>
+      <li><a href="https://open.spotify.com/user/kazuya.hatta" class="text">Spotify</a></li>
+    </ul>
+  </section>
 
-  <h3>Rannotation (2018)</h3>
-  <a href="//github.com/kznovo/rectangle-annotation" class="text">GitHub</a>
-  <br /><br />
-  <a href="//github.com/kznovo/rectangle-annotation">
-    <video autoplay loop muted playsinline>
-      <source src="rannotation.mp4" type="video/mp4" />
-    </video>
-  </a>
-  <p>
-    Image annotation tool for object detection data preparation. Built with python and opencv.
-  </p>
-  <br>
+  <section>
+    <h2>Projects</h2>
+
+    <h3>Rannotation (2018)</h3>
+    <a href="https://github.com/kznovo/rectangle-annotation" class="text">GitHub</a>
+
+    <br /><br />
+
+    <a href="https://github.com/kznovo/rectangle-annotation">
+      <video autoplay loop muted playsinline>
+        <source src="rannotation.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </a>
+
+    <p>Image annotation tool for object detection data preparation. Built with Python and OpenCV.</p>
+  </section>
+
   <hr />
-  <footer><small>&copy;Kazuya Hatta all rights reserved.</small></footer>
+
+  <footer>
+    <small>&copy; Kazuya Hatta. All rights reserved.</small>
+  </footer>
 </body>
 
 </html>
